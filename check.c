@@ -1,9 +1,15 @@
 #include <stdio.h>
+
 /*
- *  printf() displays the string inside quotation
+ * @argc: counts the members
+ * @argv: stores the members
  */
-int main()
+
+int main(int argc, char *argv[])
 {
-	printf("Hello, World!");
+	int counter;
+	for(counter=0; counter<argc; counter++)
+		printf("argv[%2d]: %s\n",counter,argv[counter]);
+	
 	return 0;
 }
