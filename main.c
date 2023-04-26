@@ -1,18 +1,20 @@
 #include "shell.h"
 
-/**
- * main - subtract integers
- * @a: first integer 
- * @b: second integer
- *
- * Return : 0 Always
+/*
+ * main - prints the arguments without using argc
+ * @main: entry point
+ * @argc: counts the members
+ * @argv: stores the members
+ *Return 0 Always
  */
-int main(int a, int b)
+int main(int argc, char *argv[])
 {
-	int result;
+	int counter;
 
-	result = a - b;
-	printf("The result is %d \n", result);
-
+	main(void);
+	for (counter = 0; counter < argc; counter++)
+	{
+		printf("argv[%2d]: %s\n", counter, argv[counter]);
+	}
 	return (0);
-}	
+}
