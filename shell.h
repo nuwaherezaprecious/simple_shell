@@ -1,5 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef SHELL_H
+#define SHELL_H
+typedef long int ssize_t;
+void prompt(char **av, char **env);
 
-
-int main(int argc, char *argv[])
+#endif
